@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="sv2.css">
+  <title>QR code</title>
+</head>
+<body id="bo">
+
+      <div id="slutin">
+       <h2>Al Sultan</h2>
+       <p class="prg">
+           Welcome to the site of the Sultan
+You can create your own QR code, all you have to do is add the text or your page link, and the QR code will be generated ♡..
+</p>
+   <p>
+The site is from my programming «Ⓓⓔⓥⓔⓓ» To request programming for a blog or a private website, contact me from <a href="https://www.facebook.com/da.yv.75">here</a>
+      </p>
+      
+      <button id="agr">Agree</button>
+   </div>
+         <div class="box-con">
+  <h1 class="log">QR Code</h1>
+  <h4 class="dev">Deved/Sultin AL Programers</h4>
+  
+  
+  
+  <h4 class="h33">
+    Add your URL to be able to generate its qr code 
+  </h4>
+  
+  <p class="pr">
+  
+  </p>
+  
+ <input type="text" placeholder="Pest URL\Text" id="val">
+ 
+ 
+ <button id="bu">Create QR Code</button>
+ 
+ <h2 class="th">
+        This QR Code
+      </h2>
+      <button class="elr">♡•About•♡</button>
+      <aside class="qrc">
+       
+        
+        <img src="" alt="" id="qr">
+
+</aside>
+
+</div>
+   <div id="sacs">
+    
+      </div>
+  
+  <script>
+
+    let na = document.getElementById('na');
+    let ri = document.getElementById('ri');
+    let bo = document.getElementById('bo'), 
+       data = new Date(),
+       scwnds = data.getSeconds();
+      if (localStorage.length > 0) {
+        localStorage.getItem('texco');
+        bo.style.background = localStorage.texco;
+        localStorage.clear()
+      }
+
+   function stylw(color) {
+    localStorage.setItem('texco', color)
+    bo.style.background = color;
+   }
+   /*=============slicText====================*/
+   var text = 'helo my world';
+   var inde = 1,
+   pp = document.querySelector('.pr');
+  
+   
+   
+         
+    /*=============QR Code====================*/
+    let val = document.getElementById('val'),
+    qr = document.getElementById('qr'),
+    bu = document.getElementById('bu'),
+    sacs = document.getElementById('sacs'),
+    body = document.querySelector('body'),
+    elr = document.querySelector('.elr'),
+  slutin = document.getElementById('slutin'),
+    agr = document.getElementById('agr'),
+  boxcon = document.querySelector('.box-con ');
+  
+  
+   agr.addEventListener('click',function () {
+   slutin.style.display = "none";
+       boxcon.style.opacity = 1;
+       })
+   
+   
+                 elr.addEventListener('click',function () {
+                alert('لو عآوز تعمـل لنفسـگ دعآيـﮯهہ‏‏ عرفهہ‏‏مـ آنگ قآعد مـعآيـﮯآ  « Deved »خلى آسـمـگ سـآبق سـنگ 👌🏻 ');
+     slutin.style.display = "block "; 
+     boxcon.style.opacity = 0.2;
+             })              
+   
+    
+     bu.addEventListener('click', function () {
+     if (val.value != '') {
+      
+     
+     var sacn = 5,
+     tim = setInterval(function() {
+      clock();
+      },1000);
+     
+    }
+    else if(val.value == '')
+    {alert('Error Please Add Text');}
+      function clock() {
+       
+      var remsacn = sacn % 60;
+        pp.innerHTML =  remsacn;
+        if (sacn > 0) {
+          sacn = sacn -1
+        }
+        else if (sacn == 0) {
+          clearInterval(tim);
+          pp.innerHTML = '';
+          qrco();
+        }
+      }
+      function qrco() {
+      
+        val.value = '';
+        sacs.style.display = 'block';
+        qr.style.display = 'block';
+         if(qr.src =`https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${val.value}`){
+            sacs.innerText = 'Successfull Please Waiti';
+          }
+        body.onclick = function () {
+          sacs.style.display = 'none';
+         
+        }
+      }
+     })
+   
+  </script>
+</body>
+
+</html>

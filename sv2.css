@@ -1,0 +1,556 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Old+Standard+TT:ital@1&family=Rubik+Puddles&family=Shrikhand&family=Tilt+Prism&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One:ital@1&family=Rubik+Wet+Paint&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One:ital@1&family=Amatic+SC&family=Rubik+Wet+Paint&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
+
+*{color: rgb(240, 236, 19);margin: 0;padding: 0;}
+body{background: linear-gradient(rgb(3, 2, 88),rgb(2, 7, 75),rgb(61, 5, 134)); width: 100%;
+ height: 100%;
+ width: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+img{
+    width: 100px;
+    height: 100px;
+}
+@media screen and (max-width:950px) {
+  
+    body{  
+    height: 100%;
+    width:95%;
+        overflow: hidden;
+        z-index: -1;
+    }
+    
+   
+    .box-con{
+        width: 100%;
+        height: 650px;
+        position: relative;
+        top: 40%;
+        left: 50%;
+        transform: translateX(-50%);
+       overflow: hidden;
+       opacity: 0.2;
+      
+    } 
+ .box-con .log
+    {
+    text-shadow: 5px 5px 12px rgba(255,255,255,0.5);
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        font-family: 'Tilt Prism', cursive;
+
+font-family: 'Alumni Sans Inline One', cursive;
+font-family: 'Rubik Wet Paint', cursive;
+
+        transform: translateX(-48%);
+        width: 100%;
+        font-size: 70px;
+        text-align: center;
+         background:linear-gradient(#C02425,#F0CB35);
+         ;
+         text-shadow: 2px 2px 3px rgba(219, 7, 88, 0.5);
+         -webkit-background-clip: text;
+         -webkit-text-fill-color: transparent;
+     }
+     .dev
+     { 
+        font-size: 15px;
+        width: 100%;
+        position: relative;
+        top: 100px;
+        left: 50%;
+        text-align: center;
+        transform: translateX(-40%);
+   
+        font-family: 'Amiri Quran', serif;
+         font-family: 'Old Standard TT', serif;
+font-family: 'Rubik Puddles', cursive;
+font-family: 'Shrikhand', cursive;
+font-family: 'Tilt Prism', cursive;
+   
+   
+   
+     }
+     
+
+    .box-con #val{
+        position: relative;
+        padding:15px 40px;
+        outline: none;
+        border: none;
+        width: 200px;
+        top: 220px;
+        color: #262d4b;
+        left: 30px;
+      background: linear-gradient(rgb(3, 150, 218),rgb(1, 38, 80));
+        font-family:fantasy;
+        background: linear-gradient(#FFB75E,#ED8F03);
+        border: none;
+        border-left: solid 3px fuchsia;
+        border-right: solid 3px fuchsia;
+        border-radius: 40px;
+        text-align: center;
+        font-size: 17px;
+        box-shadow: inset 5px 5px 12px rgba(255,255,255,0.5),5px 5px 12px rgba(255,255,255,0.5);
+        
+        animation:shd 5s infinity;
+    }
+  @keyframes shd {
+      0%{
+          box-shadow: inset 5px 5px 12px rgba(255,255,255,0.5),3px 3px 10px rgba(255,205,105,0.5);
+      }
+      50%{
+          box-shadow: inset 5px 5px 12px rgba(255,255,255,0.5),5px 5px 12px rgba(255,205,205,0.5);
+      }
+      70%{
+          box-shadow: inset 5px 5px 12px rgba(255,255,255,0.5),2px 2px 9px rgba(255,25,255,0.5);
+      }
+  }
+  
+  
+  
+  
+  
+   
+  
+  
+      
+    .box-con #bu{
+       outline: none;
+        padding:10px;
+        position: relative;
+        top: 250px;
+        right:0;
+        left: 200px;
+        text-align: center;
+        background: linear-gradient(rgb(55, 229, 252),rgba(4, 158, 145, 0.904));
+         border-radius: 6px;
+         color: rgb(27, 11, 1);
+        transition: 0.5s;
+        
+    }
+   
+   .box-con #bu:hover{
+       background: orange;
+   }
+    .pr
+    {height: 4px;
+        position: relative;
+        top: 150px;
+        left: 30%;
+        transform: translateX(-30%);
+        color: rgb(233, 6, 6);
+        font-size: 35px;
+         font-family:cursive;
+         text-align: center;
+    }
+    .elr{
+        position: relative;
+        top:390px;
+        left: 250px;
+        padding: 5px 10px;
+        border-radius: 10px;
+        text-align: center;
+        outline: none;
+        background:#ff1515;
+        color: yellow;
+        opacity: 0.9;
+    }
+    .elr:hover{
+        opacity: 1.0;
+    }
+    .qrc
+    {
+        width: 170px;height: 170px;
+        position: relative;
+        top:250px;
+        right: 0;
+        left: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: solid 1px yellow;
+    }
+     .th
+    {
+        position: relative;
+        top: 350px;
+        font-size: 15px;
+        width: 100%;
+        left: 200px;
+        display: block;
+        font-family:fantasy;
+    }
+    .qrc img{
+        width: 90%;height: 90%;
+        transition: 0.7s;
+        display: none;
+    }
+
+
+button{
+    color: black;
+    background: ;
+}
+#sacs
+{
+    width: 200px;
+     
+    padding:30px;
+    background-color: whitesmoke;
+    position: absolute;
+    right: 50px;
+    top: 250px;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display:none;
+   color: black;
+   font-size: 16px;
+   font-family:fantasy;
+   
+}
+#sacs h1
+{
+    text-align: center;
+    font-size: 20px;
+    background: transparent;
+    color: black;
+}
+.h33
+{
+font-family: 'Alumni Sans Inline One', cursive;
+font-family: 'Amatic SC', cursive;
+font-family: 'Rubik Wet Paint', cursive;
+width: 80%;
+font-size: 20px;
+   /*text-shadow: 1px 1px 1px white;*/
+    position: relative;
+    top: 130px;
+    left: 50%;
+    
+    transform: translateX(-50%);
+}
+#slutin
+{ overflow: auto;
+    
+    transition: 0.6;
+    padding: 10px;
+    position: absolute;
+    top:50%;
+    left:8%;
+    transform: translateY(-50%);
+    width: 280px;
+    height: 500px;
+    border-radius: 10px;
+    z-index: 100;
+    background: white;
+    background:linear-gradient(#bfffea,#F0CB35);
+    box-shadow:inset 6px 6px 12px rgba(178,223,219,0.5),6px 6px 12px rgba(178,223,219,0.5);
+}
+#slutin h2
+{
+   margin-left:4px;
+   font-size: 38px;
+   text-align: center;
+   color: black;
+ background:linear-gradient(#C02425,#F0CB35);
+   font-family: 'Cabin Sketch', cursive;
+   font-family: 'Cinzel Decorative', cursive;
+    -webkit-background-clip: text;
+         -webkit-text-fill-color: transparent;
+     text-shadow:5px 5px 11px #ffb22b;
+}
+#slutin p
+{
+    
+    display:block ;
+    width: 90%;
+    height: 80%;
+    
+    font-size: 30px;
+    color: #ff005e;
+   
+    margin: 10px;
+    font-family: 'Cabin Sketch', cursive;
+}
+#slutin a
+{
+    color: #40e0ff;
+}
+#agr
+{
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    margin-left: 40px;
+    outline: none;
+    border-radius: 10px; background:linear-gradient(#00abff,#6ab6ff);
+    
+}
+}
+@media screen and (min-width:970px) and (max-width:2000px){
+ body
+ {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+    .box-con{
+        width: 90%;
+        height: 600px;
+        border: solid 3px yellow;
+        margin-top: 20px;
+        background-color: black;
+        background: url('stars1.png') repeat;
+        background-size: 100% 100%;
+     border-radius: 20px;
+    } 
+
+    .box-con .log
+    {
+        position: absolute;
+        top: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        font-size: 70px;
+        text-align: center;
+         background:linear-gradient(rgb(6, 192, 248),rgba(5, 125, 161, 0.233));
+         text-shadow: 2px 2px 3px rgba(219, 7, 88, 0.5);
+         -webkit-background-clip: text;
+         -webkit-text-fill-color: transparent;
+         font-family: 'Rubik Wet Paint', cursive;
+     }
+     .dev
+     {
+        position: relative;
+        top: 150px;
+        left: 70%;
+        width: ;
+        transform: translateX(-20%);
+
+     }
+
+
+
+     .box-con #val{
+        position: relative;
+        padding:10px 40px;
+        outline: none;
+        border: none;
+        width: 200px;
+        top: 250px;
+        color: gold;
+        left: 50px;
+        background: linear-gradient(rgb(3, 150, 218),rgb(1, 38, 80));
+        border: none;
+        border-left: solid 3px fuchsia;
+        border-right: solid 3px fuchsia;
+        border-radius: 40px;
+        text-align: center;
+        font-size: 15px;
+        
+        
+    }
+    .box-con #bu{
+        outline: none;
+         padding:10px;
+         position: relative;
+         top: 300px;
+         right: 10px;
+         text-align: center;
+         background: linear-gradient(rgb(55, 229, 252),rgba(4, 158, 145, 0.904));
+          border-radius: 6px;
+          color: rgb(27, 11, 1);
+         transition: 0.6s;
+     }
+    .box-con #bu:hover{
+        background-color: rgb(27, 11, 1);
+        color: gold;
+    }
+     .pr
+     {  height: 4px;
+         position: relative;
+         top: 200px;
+         left: 50%;
+         transform: translateX(-10%);
+         color: rgb(233, 6, 6);
+         font-size: 30px;
+          font-family: cursive 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     }
+     .qrc
+     {
+         width: 140px;height: 140px;
+         position: relative;
+         top:300px;
+         right: 0;
+         left: 10px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         border: solid 1px yellow;
+     }
+     .th
+     {
+         position: relative;
+         top: 350px;
+         font-size: 15px;
+         width: 100%;
+         left: 170px;
+         
+         display: block;
+     }
+     .qrc img{
+         width: 100%;height: 100%;
+         transition: 0.7s;
+         display: none;
+     }
+ 
+ 
+ button{
+     color: black;
+     background: ;
+ }
+ #sacs
+ {
+     width: 200px;
+      
+     padding:30px;
+     background-color: whitesmoke;
+     position: absolute;
+     right: 40%;
+     top: 300px;
+     border-radius: 7px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+     display:none ;
+    color: black;
+    font-size: 15px;
+    
+ }
+ #sacs h1
+ {
+     text-align: center;
+     font-size: 20px;
+     background: transparent;
+     color: black;
+ }
+ .h33
+ {
+     text-shadow: 1px 1px 1px white;
+     position: relative;
+     top: 170px;
+     left: 50%;
+     transform: translateX(-30%);
+     font-family: 'Old Standard TT', serif;
+     font-family: 'Rubik Puddles', cursive;
+     font-family: 'Shrikhand', cursive;
+     font-family: 'Tilt Prism', cursive;
+        
+ }
+
+
+
+
+   
+  
+.elr
+    {
+position: relative;
+top: 250px;
+left: 50%;
+width: 120px;
+padding: 10px 20px;
+transition: 0.6s;
+   text-align: center;
+    border-radius: 10px;
+    text-align: center;
+    outline: none;
+    background:#ff1515;
+    color: yellow;
+    opacity: 0.9;
+
+    }
+    .elr:hover{
+        background: #00abff;
+    }
+    
+   
+    
+    
+    
+
+
+#slutin
+{  display: ;
+    overflow: auto;
+    display: none;
+    transition: 0.6;
+    padding: 10px;
+    position: absolute;
+    top:50%;
+    left:8%;
+    transform: translateY(-50%);
+    width: 280px;
+    height: 500px;
+    border-radius: 10px;
+    z-index: 100;
+    background: white;
+    background:linear-gradient(#bfffea,#F0CB35);
+    box-shadow:inset 6px 6px 12px rgba(178,223,219,0.5),6px 6px 12px rgba(178,223,219,0.5);
+}
+#slutin h2
+{
+   margin-left:4px;
+   font-size: 38px;
+   text-align: center;
+   color: black;
+ background:linear-gradient(#C02425,#F0CB35);
+   font-family: 'Cabin Sketch', cursive;
+   font-family: 'Cinzel Decorative', cursive;
+    -webkit-background-clip: text;
+         -webkit-text-fill-color: transparent;
+     text-shadow:5px 5px 11px #ffb22b;
+}
+#slutin p
+{
+    
+    display:block ;
+    width: 90%;
+    height: 80%;
+    
+    font-size: 30px;
+    color: #ff005e;
+   
+    margin: 10px;
+    font-family: 'Cabin Sketch', cursive;
+}
+#slutin a
+{
+    color: #40e0ff;
+}
+#agr
+{
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    margin-left: 40px;
+    outline: none;
+    border-radius: 10px; background:linear-gradient(#00abff,#6ab6ff);
+    
+}
+}
